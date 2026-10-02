@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en" data-critters-container>
+
+<head>
+    <meta charset="utf-8">
+    <title>DARK PROJECT | WEB LAB</title>
+    <base href="./">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+    <link rel="manifest" href="manifest.webmanifest">
+    <meta name="theme-color" content="#000000">
+    <script>
+        document.addEventListener('wheel', function(event) {
+            if (event.ctrlKey) {
+                event.preventDefault();
+            }
+        }, {
+            passive: false
+        });
+
+        document.addEventListener('keydown', function(event) {
+            if ((event.ctrlKey || event.metaKey) && (event.key === '+' || event.key === '-' || event.key === '0')) {
+                event.preventDefault();
+            }
+        });
+    </script>
+    <style>
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            font-size: 100%;
+            font: inherit;
+            vertical-align: baseline
+        }
+
+        html {
+            font-size: 100px
+        }
+
+        body {
+            line-height: 1
+        }
+
+        body {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            min-width: 1366px;
+            min-height: 768px;
+            aspect-ratio: 16/9;
+            cursor: default;
+            -webkit-user-select: none;
+            -o-user-select: none;
+            user-select: none;
+            font-family: OpenSansLight, Roboto, Arial, sans-serif;
+            font-size: 16px;
+            overflow: auto
+        }
+
+        @media screen and (max-width: 1365px) {
+            html {
+                font-size: 75px
+            }
+        }
+
+        @media screen and (min-width: 1366px) {
+            html {
+                font-size: 7.3206442167vw
+            }
+        }
+
+        @media screen and (min-width: 1910px) {
+            html {
+                font-size: 5.20833vw
+            }
+        }
+
+        @media screen and (min-width: 2560px) {
+            html {
+                font-size: 3.90625vw
+            }
+        }
+
+        :root {
+            --base-color: rgb(0, 99, 245);
+            --hover-color: rgb(0, 4, 245);
+            --bg-color: rgb(93, 93, 93);
+            --bg-color2: rgb(37, 37, 37);
+            --cssBlockColor: #383838
+        }
+
+        @font-face {
+            font-family: OpenSansLight;
+            src: url(OpenSans-Regular.8f605fdd2ad38233.ttf) format("opentype")
+        }
+    </style>
+    <link rel="stylesheet" href="styles.980326e26cd0ef66.css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="styles.980326e26cd0ef66.css"></noscript></head>
+
+<body>
+    <app-root></app-root>
+    <noscript>Please enable JavaScript to continue using this application.</noscript>
+    <script src="runtime.27a9e9f06d59672f.js" type="module"></script>
+    <script src="polyfills.b50f6d2234a0bd8d.js" type="module"></script>
+    <script src="main.67f2a4ad434666c9.js" type="module"></script>
+</body>
+
+</html>
