@@ -1,4 +1,6 @@
 # Dark Project Web Lab (Offline PWA Launcher)
+> [!NOTE]
+> **NOTE:** Not all features are still working perfectly due to problems with parsing asset files and by lazyness, if you know how to fix a certain problem - I'd be glad to see your PR :D
 
 [![Linux](https://img.shields.io/badge/platform-Linux-FCC624?style=flat-square&logo=linux&logoColor=black)](https://kernel.org)
 [![Bash](https://img.shields.io/badge/shell-Bash-4EAA25?style=flat-square&logo=gnu-bash&logoColor=white)](https://www.gnu.org/software/bash/)
@@ -7,7 +9,7 @@
 
 Standalone desktop integration and local runner for the Dark Project keyboard web configuration software (`software.darkproject.eu`).
 
-The official upstream web app heavily relies on lazy-loaded assets (hover states, model layouts, icons) that often fail to resolve cleanly on flaky connections or when accessed offline. This repository mirrors the full static web build and provides an isolated execution wrapper that hooks directly into standard Linux application launchers.
+The official web app had some trouble detecting my keyboard (ALU87A), which caused me a lot of trouble setting up the color scheme (I simply couldn't do it). My saga with DP support lasted three months, and they finally sent me a QuickFix for their web software, so I decided to create a permanent offline version that would perform all the functions I need. I have no objection to making this code publicly available, since I found it in the public domain; therefore, as long as there are no objections from the code’s owners, it will remain on my GitHub, open to collaboration on improvements.
 
 ---
 
